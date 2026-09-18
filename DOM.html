@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter</title>
+    </head>
+  <body>
+
+     <h2>COUNTER APP</H2>
+     <P id="count">0</p>
+     <button class="btn">increment</button>
+     <button class="btn">decrement</button>
+
+
+
+     <script>
+
+
+
+       const count=document.getElementById('count')
+       const button=document.getElementsByClassName('btn')[0]
+       const button2=document.getElementsByClassName('btn')[1]
+
+         button.addEventListener("click",function(){
+          count.textContent=Number(count.textContent)+1
+         })
+
+
+         button2.addEventListener("click",function(){
+          count.textContent=Number(count.textContent)-1
+          }
+       )
+        </script>
+    </body>
+</html>
+
